@@ -30,7 +30,7 @@ double money = 0.0;
 money += .05*nickels;
 money += .10*dimes;
 money += .25*quarters;
-System.out.println();
+System.out.println(money);
 
 		// Tell the user how much money they have
 

@@ -8,15 +8,19 @@ public class StringMethods1 {
 	public static void main(String[] args) {
 		
 		// 1. Create a String variable and initialize it to whatever you want
-
+String s = "MEMES";
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-		
+		System.out.println(s.charAt(0));
 		// 3. Print the length of your String to the console.
 		//    HINT: .length()
-
+		System.out.println(s.length());
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
+		for(int i=0; i<s.length(); i++) {
+			System.out.println(s.charAt(i));
+			//use s.length then use i (i goes up to the length index)
+		}
 
 		
 		// 5. Pick a char inside your String, and use a loop to determine
@@ -24,6 +28,12 @@ public class StringMethods1 {
 		//    Print the char's position to the console.
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
+		for (int i = 0; i<s.length(); i++) {
+			if(s.charAt(i)=='S') {
+				System.out.println("s is at index" + s.charAt(i));
+			}
+			
+		}
 		
 	}
 }
