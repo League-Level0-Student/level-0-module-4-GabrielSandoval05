@@ -30,7 +30,7 @@ String s = "MEMES";
 		//             for char 'b', then print "b is at index 1"
 		for (int i = 0; i<s.length(); i++) {
 			if(s.charAt(i)=='S') {
-				System.out.println("s is at index" + s.charAt(i));
+				System.out.println("s is at index"  + s.charAt(i));
 			}
 			
 		}
