@@ -23,10 +23,12 @@ for (int i = 0; i <499 ; i++) {
 }
 	// 5. Use the speak() method to speak all the digits of Pi.
 
+
 	// [ADVANCED]
 	// *6. Get a character from the user using the getInputFromUser() method
 getInputFromUser();
 	// *7. Compare the users' char to the next digit of Pi
+
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
 	}
 	static void speak(char characterToSpeak) {
