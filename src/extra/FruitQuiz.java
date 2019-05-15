@@ -16,8 +16,9 @@ public class FruitQuiz extends KeyAdapter {
 	void makeQuestions() {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
 		// 11. Make another question called "question2".  Use question1 above as a guide.
-		question2 = new JLabel("<html>Which body in space isn't a planet? <br> A: Saturn <br> B: Mercury <br> C: Pluto</html>");
-		question3 = new JLabel("<html>What's the square root of 49? <br> A: 49 <br> B: 7 <br> C: quick mats </html>");
+		question2 = new JLabel("<html>Which fruit is a berry <br> A: Strawberry <br> B: Raspberry <br> C: Bannana</html>");
+		question3 = new JLabel("<html>What's the square root of 49? <br> A: bananna <br> B: 49 <br> C: quick mats </html>");
+		question4 = new JLabel("<html>Is Timmy a furry? <br> A: I'll bet life on it <br> B:No stop bullying <br> C:mmmmmm ye </html>");
 	}
 
 	@Override
@@ -32,10 +33,21 @@ public class FruitQuiz extends KeyAdapter {
 		int c = 67;
 		
 		// 14. Repeat steps 11, 12, and 13 for question3 and question4 - IMPORTANT: The questions must be in reverse order from top to bottom to work properly
-		if(question3.isShowing()) {
-			if(keycode == 66) {
+		if(question4.isShowing()) {
+			if(keyCode == 66) {
 				correct();
-				playSound(correcct.wav);
+				playSound("correct.wav");
+				
+			}
+			else {
+				incorrect();
+				playSound("wrong.wav");
+			}
+		}
+		if(question3.isShowing()) {
+			if(keyCode == 66) {
+				correct();
+				playSound("correct.wav");
 				nextQuestion(question4);
 			}
 		}
@@ -44,13 +56,13 @@ public class FruitQuiz extends KeyAdapter {
 		if(question2.isShowing()) {
 			if(keyCode == 67) {
 				correct();
-				playSound(correct.wav);
+				playSound("correct.wav");
 				nextQuestion(question3);
 			}
 			
 			else {
 				incorrect();
-				playSound(wrong.wav);
+				playSound("wrong.wav");
 			}
 		}
 			
@@ -61,7 +73,7 @@ public class FruitQuiz extends KeyAdapter {
 			// 3. If they selected the right fruit, do steps 4 and 7
 			if ( keyCode == 67) {
 				correct();
-				playSound(correct.wav);
+				playSound("correct.wav");
 				nextQuestion(question2);
 				
 			}
@@ -73,7 +85,7 @@ public class FruitQuiz extends KeyAdapter {
 			// 8. else (if they touched something else)
 			else {
 				incorrect();
-				playSound(wrong.wav);
+				playSound("wrong.wav");
 			}
 				
 				// 9. Call the incorrect() method
