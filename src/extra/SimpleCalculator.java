@@ -7,7 +7,7 @@ public class SimpleCalculator {
 	public static void main(String[] args) {
 
 		// 1. Get 2 numbers from the user and convert them to integer.
-String answer = JOptionPane.showInputDialog("Enter two different numbers pls");
+String answer = JOptionPane.showInputDialog("Enter a different number pls");
 int numbers = Integer.parseInt(answer);
 String response = JOptionPane.showInputDialog("Another number pls -_-");
 int memes = Integer.parseInt(response);
@@ -28,4 +28,3 @@ int memes = Integer.parseInt(response);
 
 	// 4. Create similar methods for subtraction, multiplication and division.
 }
-static void add
