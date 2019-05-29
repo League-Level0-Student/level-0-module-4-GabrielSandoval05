@@ -17,7 +17,7 @@ public class FruitQuiz extends KeyAdapter {
 		question1 = new JLabel("<html>Which is not a real fruit? <br> A: Dragon Fruit <br> B: Durian <br> C: Crazyberry</html>");
 		// 11. Make another question called "question2".  Use question1 above as a guide.
 		question2 = new JLabel("<html>Which fruit is a berry <br> A: Strawberry <br> B: Raspberry <br> C: Bannana</html>");
-		question3 = new JLabel("<html>What's the square root of 49? <br> A: bananna <br> B: 49 <br> C: quick mats </html>");
+		question3 = new JLabel("<html>What's the square root of 49? <br> A: bananna <br> B: 7 <br> C: quick mats </html>");
 		question4 = new JLabel("<html>Is Timmy a furry? <br> A: I'll bet life on it <br> B:No stop bullying <br> C:mmmmmm ye </html>");
 	}
 

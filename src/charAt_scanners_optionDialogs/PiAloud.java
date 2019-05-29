@@ -11,13 +11,21 @@ public class PiAloud {
 	// 1. Make a main method and make sure your program can run
 	public static void main(String[] args) {
 	// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
-String pi = "3.14159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442881097566593344612847564823378678316527120190914564856692346034861045432664821339360726024914127372458700660631558817488152092096282925409171";
+String pi = "3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109756659334461284756482337867831652712019091456485669234603486104543266482133936072602491412737245870066063155881748815209209628292540917";
 	// 3. Print out some digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
 System.out.println(pi.charAt(200));
 System.out.println(pi.charAt(100));
 
 	// 4. Print ALL the digits of of Pi (hint: use a loop)
-for (int i = 0; i <499 ; i++) {
+for (int i = 0; i <346 ; i++) {
+	char c = getInputFromUser();
+	if(c == pi.charAt(i)) {
+		System.out.println("correct!");
+	}
+	else {
+		System.out.println("incorrect, sorry...");
+		System.exit(0);
+	}
 	System.out.println(pi.charAt(i));
 	speak(pi.charAt(i));
 }
@@ -28,7 +36,12 @@ for (int i = 0; i <499 ; i++) {
 	// *6. Get a character from the user using the getInputFromUser() method
  getInputFromUser();
 	// *7. Compare the users' char to the next digit of Pi
-
+//if(getInputFromUser(); =1) {
+	//System.out.println("Correct!");
+	//}
+//else {
+	//System.out.println("Incorrect. Sorry");
+//}
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
 	}
 	static void speak(char characterToSpeak) {
